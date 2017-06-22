@@ -16,7 +16,7 @@ pipeline:
     channel: nottesting
     webhook: https://hooks.slack.com/services/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
     icon_url: https://pbs.twimg.com/profile_images/573911705505259520/rShq67tG.png
-    template: "Build #{{build.number}} for {{repo.name}} on branch {{build.branch}} resulting from {{build.event}} started at {{datetime build.started}} has finished in {{build.status}}! Details here: {{build.link}}"
+    template: "Build #{{build.number}} for {{repo.name}} on branch {{build.branch}} resulting from {{build.event}} started at {{build.started}} has finished in {{build.status}}! Details here: {{build.link}}"
     when:
       status: [ success, failure ]
 
