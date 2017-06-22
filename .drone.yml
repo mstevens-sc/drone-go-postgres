@@ -10,7 +10,7 @@ pipeline:
       - cd todo
       - go get -v
       - go test -v -cover
-  slack:
+  notify:
     image: plugins/slack
     username: drone
     channel: nottesting
